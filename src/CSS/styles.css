@@ -81,9 +81,42 @@ header nav ul li:hover::after{
     transform: translate(-50%, -50%); /* Esquema pra centralizar qualquer coisa */
     filter: blur(50%);
     z-index: 1;
+    animation: pulse 4s infinite alternate;
 }
 
 @keyframes pulse{
-    
+    0%{
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.8); /* 80% do tamanho original, começa no centro mas menor */
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(2);
+    }
+
+
 }
 
+.list {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.item{
+    position: absolute;
+    inset: 0; /* mesmo valor para todas as direções: top, bottom, left, right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+}
+
+.active{
+    opacity: 1;
+    
+}
