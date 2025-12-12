@@ -19,7 +19,7 @@
   </header>
   
   <main class="container">
-    <div class="tech-circle">
+    <div class="tech-circle"> <!-- Circulos de estilo do fundo da tela escura -->
       <div class="circle"></div>
       <div class="circle"></div>
       <div class="circle"></div>
@@ -27,7 +27,9 @@
     </div>
 
     <div class="list">
-      <div class="active item">
+
+      <div class="active item"> <!-- active item separado, no javascript eu vou mudar para que o active esteja no produto
+        que estiver aparecendo no momento durante o rollback da tela -->
         <div class="product-img">
           <img src="./src/img/apple-watch.png" alt="Apple Watch">
         </div>
@@ -35,16 +37,60 @@
           <p class="product-tag">Novo Lançamento</p>
           <p class="product-name">Apple Watch Series 10</p>
           <p class="product-descript">O parceiro ideal para cuidar da sua saúde</p>
-          <button class="product-btn"></button>
+          <button class="product-btn">Saiba Mais</button>
         </div>
       </div> 
 
       <div class="item">
+        <div class="product-img">
+          <img src="./src/img/air-pods.png" alt="Air pods">
+        </div>
+        <div class="product-content">
+          <p class="product-tag">Som Premiun</p>
+          <p class="product-name">Air Pods Max</p>
+          <p class="product-descript">AirPods Max, a experiência definitiva em áudio</p>
+          <button class="product-btn">Saiba Mais</button>
+        </div>
       </div>
+      
 
       <div class="item">
+        <div class="product-img">
+          <img src="./src/img/vision-pro.png" alt="Vision Pro">
+        </div>
+        <div class="product-content">
+          <p class="product-tag">Alta performance</p>
+          <p class="product-name">Apple Vision Pro</p>
+          <p class="product-descript"> Prepare-se para experimentar seus aplicativos favoritos de uma maneira totalmente nova</p>
+          <button class="product-btn">Saiba Mais</button>
+        </div>
       </div>
 
+    </div>
+
+    <div class="arrows" id="prev"> <!-- ID para identificar esquerda e direita no JS -->
+        <button class="arrow-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg>
+        </button>
+
+        <button class="arrow-btn" id="next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg>
+        </button>
+    </div>
+
+    <div class="indicators">
+      <div class="numbers">
+        01
+      </div>
+      <div class="dots">
+        <div class="dot active"></div> <!-- Quem estiver com a classe active é o ponto ativo da vez -->
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
     </div>
   </main>
 </body>
