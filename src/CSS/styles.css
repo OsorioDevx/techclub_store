@@ -117,10 +117,15 @@ header nav ul li:hover::after{
     opacity: 0;
     min-width: 100%;
 
+    transform: translateX(100vw);
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+
 }
 
 .active{
     opacity: 1;
+    transform: translateX(0);
+    
 
 }
 
@@ -139,6 +144,18 @@ header nav ul li:hover::after{
     max-width: 80%;
     max-height: 60%;
     filter: drop-shadow(0 0 30px rgba(0,247,255,0.3)); /* animação em volta da imagem */
+
+    transform: translateX(400px);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.5s ;
+
+}
+
+.active .product-img img{
+    transform: translateX(0);
+    opacity: 1;
+    
 }
 
 .content{
@@ -160,6 +177,17 @@ header nav ul li:hover::after{
     letter-spacing: 2px;
     margin-bottom: 10px;
 
+    transform: translateX(400px);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.5s ;
+
+}
+
+.active .product-tag{
+    transform: translateX(0);
+    opacity: 1;
+    
 }
 
 .product-name{
@@ -167,7 +195,21 @@ header nav ul li:hover::after{
     font-family: "Orbitron", sans-serif;
     line-height: 1.1;
     margin-bottom:20px ;
+    
+    transform: translateX(400px);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.5s ;
+
 }
+
+.active .product-name{
+    transform: translateX(0);
+    opacity: 1;
+    
+}
+
+
 
 .product-descript{
     font-size: 1.1rem;
@@ -176,6 +218,17 @@ header nav ul li:hover::after{
     margin-bottom: 30px;
     max-width: 600px;
 
+    transform: translateX(400px);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.5s ;
+
+}
+
+.active .product-descript{
+    transform: translateX(0);
+    opacity: 1;
+    
 }
 
 .product-btn{
@@ -187,6 +240,17 @@ header nav ul li:hover::after{
     font-weight: 600;
     cursor: pointer;
     border: none;
+    transform: translateX(400px);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.5s ;
+
+}
+
+.active .product-btn{
+    transform: translateX(0);
+    opacity: 1;
+    
 }
 
 .arrows{
