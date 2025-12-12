@@ -103,6 +103,8 @@ header nav ul li:hover::after{
     height: 100%;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    transition: transform 0.5s ease;
 
 }
 
@@ -113,6 +115,7 @@ header nav ul li:hover::after{
     justify-content: center;
     align-items: center;
     opacity: 0;
+    min-width: 100%;
 
 }
 
@@ -266,7 +269,7 @@ header nav ul li:hover::after{
 .circle{
     position: absolute;
     border-radius: 50%;
-    border: 1px solid rgba(0,247,255,0.2);
+    border: 1px solid rgba(0,247,255,0.1);
 
 }
 
@@ -296,7 +299,7 @@ header nav ul li:hover::after{
 
 .circle:nth-child(4){
     width: 120px;
-    height: 220px;
+    height: 120px;
     top: 20%;
     left: 70%;
 
